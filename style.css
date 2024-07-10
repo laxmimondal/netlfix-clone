@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/netflix\ open.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
+}
+
+.main .box {
+    height: 100vh;
+    width: 100% ;
+    opacity: 0.68;
+    position: absolute;
+    top: 0;
+    background-color: black;
+
+}
+
+nav {
+    display: flex;
+    max-width: 75vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 154px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    height: calc( 100% - 100px) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative; /* helps the element to pop out*/
+    gap: 23px;
+    padding: 0 30px;
+}
+/* use what font extension */
+.hero> :first-child{
+    font-weight: bolder;
+    font-size: 48px;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    max-width: 60vw;
+}
+.hero> :nth-child(2){
+    font-family: 'Segoe UI',sans-serif;
+    font-weight: 450;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.seperation{
+    height: 7px;
+    background-color: rgb(109, 107, 107);
+    position: relative;
+    z-index: 10;
+}
+.btn{
+    padding: 2px 22px;
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 18px;
+    font-weight: 400 ;
+    color: white;
+    background-color: rgba(187, 186, 186, 0.336);
+    border-radius: 4px;
+    border: 0.34px solid rgba(250, 250, 250, 0.726);
+    cursor: pointer;
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 2px 12px;
+    border-radius: 4px;
+    border: solid rgba(250, 250, 250, 0.247);
+    font-weight: 400;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 5px 26px;
+    font-size: 23px;
+    border-radius: 6px;
+    border: solid rgba(250, 250, 250, 0);
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.main input{
+    padding: 12px 101px 12px 14px;
+    color: rgb(255, 255, 255);
+    font-weight: 450;
+    font-size: 17px;
+    border-radius: 6px;
+    background-color: rgba(241, 241, 237, 0.137);
+    border:1px solid rgba(241, 241, 237, 0.25);
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+@media screen  and (max-width: 1300px){
+    nav{
+        max-width: 90vw;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .hero> :nth-child(1){
+        font-size: 32px;
+    }
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+    }
+    footer{
+        max-width: 90vw;
+    }
+    .footer-item{
+        align-items: center;
+    }
+}
+.secimg{
+    position: relative;
+}
+.secimg img{
+    max-width: 30vw;
+}
+.secimg video{
+    max-width: 285px;
+    max-height: 17vw;
+    position: absolute;
+    top: 98px;
+    right: 58px;
+    z-index: 10;
+}
+
+section.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: 'Poppins','Segoe UI',sans-serif;
+}
+section.first > div :nth-child(2){
+    
+    font-size: 24px;
+    font-weight: 300px;
+    font-family: 'Segoe UI',sans-serif;
+}
+.faq{
+    background: black;
+    color: white;
+    font-size: 24px;
+}
+.faq h2{
+    text-align: center;
+    font-family: 'poppins', 'Segoe UI',sans-serif;
+  font-size: 48px;
+}
+.faqbox{
+    
+    justify-content:space-between ;
+    display: flex;
+    background-color:rgba(128, 128, 128, 0.301);
+    padding: 34px;
+     max-width: 65vw;
+    margin: 34px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 1s ease-out;
+}
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+.footer-item{
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+@media screen  and (max-width: 1300px){
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    gap: 25px;}
+   
+}
+.footer a{
+   font-size: 14 px;
+    color: white;
+}
+
+
